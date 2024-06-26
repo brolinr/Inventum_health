@@ -1,8 +1,8 @@
 export default function QuotationForm() {
   return (
-    <div className="w-full p-4 md:p-8">
+    <div className="w-full p-4">
       <h1 className="text-3xl mb-4 text-center">
-        GET A <span className="font-bold text-blue-700">FREE</span> QUOTE
+        GET A <span className="font-bold text-blue-700">FREE QUOTE</span>
       </h1>
 
       <form className="grid md:grid-cols-2 grid-cols-1 gap-4" action="" method="post">
@@ -22,8 +22,8 @@ export default function QuotationForm() {
         </div>
 
         <div className="flex-col flex gap-2">
-          <label htmlFor="number_of_personel">Number of personnel</label>
-          <input type="number" id="number_of_personel" className="p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-700" />
+          <label htmlFor="number_of_personnel">Number of personnel</label>
+          <input type="number" id="number_of_personnel" className="p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-700" />
         </div>
 
         <div className="flex-col flex gap-2">
