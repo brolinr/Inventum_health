@@ -42,6 +42,26 @@ export default function QuotationForm() {
         </div>
 
         <div className="flex-row items-center flex gap-2 col-span-1">
+          <input type="checkbox" id="xrays" className="border border-gray-300 rounded focus:outline-none focus:border-blue-700" />
+          <label htmlFor="xrays">Xrays</label>
+        </div>
+
+        <div className="flex-row items-center flex gap-2 col-span-1">
+          <input type="checkbox" id="drug_test" className="border border-gray-300 rounded focus:outline-none focus:border-blue-700" />
+          <label htmlFor="drug_test">Multi Drug testing</label>
+        </div>
+
+        <div className="flex-row items-center flex gap-2 col-span-1">
+          <input type="checkbox" id="spirometry" className="border border-gray-300 rounded focus:outline-none focus:border-blue-700" />
+          <label htmlFor="spirometry">Spirometry test/Lung function testing</label>
+        </div>
+
+        <div className="flex-row items-center flex gap-2 col-span-1">
+          <input type="checkbox" id="fitness_certificate" className="border border-gray-300 rounded focus:outline-none focus:border-blue-700" />
+          <label htmlFor="fitness_certificate">Employee Medical Certificate of Fitness</label>
+        </div>
+
+        <div className="flex-row items-center flex gap-2 col-span-1">
           <input type="checkbox" id="food_handlers" className="border border-gray-300 rounded focus:outline-none focus:border-blue-700" />
           <label htmlFor="food_handlers">Food handler examinations</label>
         </div>
@@ -51,29 +71,9 @@ export default function QuotationForm() {
           <label htmlFor="equipment_rental">Medical screening equipment rental</label>
         </div>
 
-        <div className="flex-row items-center flex gap-2 col-span-1">
-          <input type="checkbox" id="spirometry" className="border border-gray-300 rounded focus:outline-none focus:border-blue-700" />
-          <label htmlFor="spirometry">Spirometry test/Lung function testing</label>
-        </div>
-
-        <div className="flex-row items-center flex gap-2 col-span-1">
-          <input type="checkbox" id="drug_test" className="border border-gray-300 rounded focus:outline-none focus:border-blue-700" />
-          <label htmlFor="drug_test">Multi Drug testing</label>
-        </div>
-
-        <div className="flex-row items-center flex gap-2 col-span-1">
-          <input type="checkbox" id="fitness_certificate" className="border border-gray-300 rounded focus:outline-none focus:border-blue-700" />
-          <label htmlFor="fitness_certificate">Employee Medical Certificate of Fitness</label>
-        </div>
-
-        <div className="flex-row items-center flex gap-2 col-span-1">
+        <div className="flex-row col-span-2 items-center flex gap-2 col-span-1">
           <input type="checkbox" id="env_training" className="border border-gray-300 rounded focus:outline-none focus:border-blue-700" />
           <label htmlFor="env_training">Occupational Health, Safety & Environmental Training</label>
-        </div>
-
-        <div className="flex-row items-center flex gap-2 col-span-1">
-          <input type="checkbox" id="xrays" className="border border-gray-300 rounded focus:outline-none focus:border-blue-700" />
-          <label htmlFor="xrays">Xrays</label>
         </div>
 
         <div className="md:col-span-2 flex flex-col gap-2">
@@ -87,7 +87,7 @@ export default function QuotationForm() {
 
         <div className="my-2 md:col-span-2 col-span-1 text-white flex justify-center items-center">
           <button className="w-full md:w-2/5 p-2 text-lg bg-blue-700 rounded-full">
-            Submit
+            Send
           </button>
         </div>
       </form>
