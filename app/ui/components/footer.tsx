@@ -17,10 +17,6 @@ export default function Footer() {
           <h1 className="text-blue-600 font-black"> INVENTUM SERVICES </h1>
           <span className="text-black font-medium">HEALTH DIVISION</span>
           <span className="text-base font-medium">{`"Excellence defined."`}</span>
-
-          <span className="text-sm mt-1 lg:w-3/5 mx-auto text-center">
-            462 Gaydon Road, Helensvale, Harare
-          </span>
         </div>
 
         <div className="col-span-1 bg-slate-300 p-5 rounded-lg flex flex-col">
@@ -40,7 +36,7 @@ export default function Footer() {
           <span className="text-black text-sm">Request a Quotation</span>
         </div>
       </div>
-      <div className="w-[90%] my-5 mx-auto rounded-full p-2 bg-gray-100 grid grid-cols-4">
+      <div className="lg:w-[90%] my-5 mx-auto md:rounded-full bg-gray-100 grid md:grid-cols-4 grid-cols-1">
         {
           social_links.map((link, index) => (
             <div 

@@ -2,12 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Icon from '@mdi/react';
 import { 
-  mdiArrowTopRight, mdiCertificateOutline, mdiLineScan,
-  mdiClipboardEditOutline, mdiHospital, mdiHardHat,
-  mdiHospitalBox, mdiHospitalMarker, mdiHours24,
-  mdiMapCheckOutline, mdiTag,
-  mdiStore24Hour, mdiCreation,
-  mdiVanUtility
+  mdiArrowTopRight, mdiCertificateOutline, mdiHospital,
+  mdiHardHat, mdiHospitalMarker, mdiMapCheckOutline,
+  mdiTag, mdiStore24Hour, mdiCreation, mdiVanUtility
 } from '@mdi/js';
 import { QuotationForm } from "./ui/components";
 
@@ -20,10 +17,10 @@ export default function Home() {
             WHO ARE WE
           </span>
           <h1 className="text-4xl my-2 w-full lg:w-4/5 font-bold">
-            Inventum Health Services: Experts in Mobile Occupational Health Care and Corporate Wellness
+            Inventum Services: Experts in Mobile Occupational Health Care and Corporate Wellness
           </h1>
           <p className="text-lg my-4 w-full lg:w-4/5">
-            We provide on-site health services, including medical certificates, workplace safety
+            We provide health services, including medical certificates, workplace safety
             training, and corporate wellness services, tailored to meet your organization's needs.
           </p>
           <div className="grid grid-cols-2 gap-2 w-full lg:w-3/5">
@@ -35,7 +32,7 @@ export default function Home() {
                 text-blue-600 bg-white text-center p-2 rounded-lg
                 flex flex-row gap-1 justify-center
               "
-              aria-label="Get a free quotation for Inventum Health Services"
+              aria-label="Get a free quotation for Inventum Services"
             >
               Free Quotation
               <Icon path={mdiArrowTopRight} size={1} color="currentColor" />
@@ -70,7 +67,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="partners" className="text-center py-8 bg-gray-100 text-black">
+      {/* <section id="partners" className="text-center py-8 bg-gray-100 text-black">
         <h1 className="text-4xl font-bold">
           Our Trusted Partners
         </h1>
@@ -81,7 +78,7 @@ export default function Home() {
           <div className=" bg-blue-400 p-4 rounded-xl" aria-label="Partner 1 logo" title="Partner 1"></div>
           <div className=" bg-blue-400 p-4 rounded-xl" aria-label="Partner 2 logo" title="Partner 2"></div>
         </div>
-      </section>
+      </section> */}
 
       <section id="services" className="py-8 bg-white w-full text-black grid lg:grid-cols-2 grid-cols-1 gap-2">
         <div className="p-4 h-fit my-auto flex flex-col text-center justify-center items-center">
@@ -89,42 +86,13 @@ export default function Home() {
             Our Mobile Occupational Health & Safety Services
           </h1>
           <p className="text-base font-normal md:w-3/5 my-4">
-            Industry experts in Mobile Occupational Health Care and Corporate
-            Wellness, offering specialized medical certificates and workplace
-            safety training.
+            Our mobile unit is equipped with industry experts and state of Art equipment.
+            We bring top-tier health examinations and essential safety advice directly 
+            to your location.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-6">
-          {/* Onsite/Walk-in Exams */}
-          <div className="bg-slate-200 h-fit shadow-xl py-10 duration-300 hover:bg-slate-300 rounded-lg flex flex-col justify-center items-center">
-            <div className="text-blue-700 flex justify-center items-center mb-2 w-12 h-12 bg-white p-1 rounded-lg">
-              <Icon path={mdiHospital} size={2} color="currentColor" />
-            </div>
-            <h2 className="text-2xl font-bold text-blue-800">
-              Onsite Exams
-            </h2>
-            <p className="text-md text-center w-[90%]">
-              Available upon appointment. Contact us today to have 
-              our experts conduct your examination with care and professionalism.
-            </p>
-          </div>
-          
-          {/* Screening Equipment Rental */}
-
-          <div className="bg-slate-200 h-fit shadow-xl py-10 duration-300 hover:bg-slate-300 rounded-lg flex flex-col justify-center items-center">
-            <div className="text-blue-700 flex justify-center items-center mb-2 w-12 h-12 bg-white p-1 rounded-lg">
-              <Icon path={mdiVanUtility} size={2} color="currentColor" />
-            </div>
-            <h2 className="text-2xl font-bold text-blue-800">
-              Equipment Rental
-            </h2>
-            <p className="text-base text-center w-[91%]">
-              Rent advanced screening equipment for health assessments with flexible 
-              payment options to meet you needs.
-            </p>
-          </div>
-          
           {/* Health, Safety & Environmental Training */}
           <div className="bg-slate-200 h-fit shadow-xl py-10 duration-300 hover:bg-slate-300 rounded-lg flex flex-col justify-center items-center">
             <div className="text-blue-700 flex justify-center items-center mb-4 w-12 h-12 bg-white p-1 rounded-lg">
@@ -139,7 +107,35 @@ export default function Home() {
               for a safer workplace environment.
             </p>
           </div>
+          
+          {/* Screening Equipment Rental */}
+          <div className="bg-slate-200 h-fit shadow-xl py-10 duration-300 hover:bg-slate-300 rounded-lg flex flex-col justify-center items-center">
+            <div className="text-blue-700 flex justify-center items-center mb-2 w-12 h-12 bg-white p-1 rounded-lg">
+              <Icon path={mdiVanUtility} size={2} color="currentColor" />
+            </div>
+            <h2 className="text-2xl font-bold text-blue-800">
+              Equipment Rental
+            </h2>
+            <p className="text-base text-center w-[91%]">
+              Rent advanced screening equipment for health assessments with flexible 
+              payment options to meet you needs.
+            </p>
+          </div>
 
+          {/* Onsite/Walk-in Exams */}
+          <div className="bg-slate-200 h-fit shadow-xl py-10 duration-300 hover:bg-slate-300 rounded-lg flex flex-col justify-center items-center">
+            <div className="text-blue-700 flex justify-center items-center mb-2 w-12 h-12 bg-white p-1 rounded-lg">
+              <Icon path={mdiHospital} size={2} color="currentColor" />
+            </div>
+            <h2 className="text-2xl font-bold text-blue-800">
+              Walk-in clinic
+            </h2>
+            <p className="text-md text-center w-[90%]">
+              First book an appointment. Contact us today to have 
+              our experts conduct your examination with care and professionalism.
+            </p>
+          </div>
+          
           {/* More Services */}
           <div className="h-fit shadow-xl bg-slate-300 duration-300 hover:bg-slate-400 p-4 rounded-lg flex flex-col gap-y-2 ">
             <h2 className="text-2xl font-bold text-blue-800">
@@ -164,7 +160,7 @@ export default function Home() {
 
       <section id="why-us" className="bg-gray-100 grid grid-cols-1 md:grid-cols-2 gap-4 p-7 lg:p-10">
         <div className="col-span-1 text-black w-4/5 lg:w-full">
-          <h2 className="text-3xl font-bold mb-4">Why Choose Inventum Health Services?</h2>
+          <h2 className="text-3xl font-bold mb-4">Why Choose Inventum Services?</h2>
           <p className="text-base mb-4 md:w-4/5">
             Trust Inventum for unparalleled expertise in ensuring compliance under the 
             Pneumoconiosis Act and the Public Health Act.
@@ -194,7 +190,7 @@ export default function Home() {
           <Image
             src="/why-us.jpeg" width={1000} height={760}
             className="rounded-lg duration-300 hover:scale-95 w-4/5"
-            alt="Inventum Health Services logo"
+            alt="Inventum Services logo"
           />        
         </div>
       </section>
