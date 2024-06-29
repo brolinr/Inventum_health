@@ -4,6 +4,7 @@ import { mdiPhone } from "@mdi/js"
 import Icon from "@mdi/react"
 
 export default function Page() {
+  
   return (
     <main className="text-black bg-white">
       <section id="mobile-health"className="text-white p-5 md:p-10 bg-blue-700 grid md:grid-cols-2 gap-2">
@@ -225,6 +226,35 @@ export default function Page() {
           </Link>
         </div>
 
+      </section>
+      <section id="physical-exam" className="bg-gray-200 p-5 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div className="w-full h-fit my-auto">
+          <h1 className="mb-2 text-3xl font-bold">
+            Dr's Physical examinations
+          </h1>
+          <p className="text-base text-slate-700 mb-2">
+            Secure a thorough and personalized health assessment by booking your Doctor’s Physical 
+            Examination. Scheduling an appointment ensures you receive comprehensive care at a time 
+            that suits you, allowing our expert medical team to focus on your specific health needs 
+            without any rush or wait.
+          </p>
+
+          <Link href='tel:+263776409817' className="flex items-center gap-x-1 w-fit p-2 text-white bg-blue-700 rounded">
+            <Icon className="transform rotate-270" path={mdiPhone} size={1} color="currentColor" />
+            Give us a call
+          </Link>
+        </div>
+
+        <div className="w-full flex items-center">
+          <Image
+            priority={true}
+            className="rounded-md shadow-lg lg:w-4/5 hover:scale-95 duration-300"
+            src='/doc_equipment.jpg'
+            width={640}
+            height={360}
+            alt="Radiology equipment"
+          />
+        </div>
       </section>
     </main>
   )
