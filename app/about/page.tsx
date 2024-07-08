@@ -19,66 +19,53 @@ export default function Page() {
       </section>
 
       <section className="grid md:grid-cols-2 grid-cols-1 gap-2 my-4">
-        <div className="md:p-10 p-5 flex flex-col gap-y-4 border-b md:border-x">
+        <div className="md:p-10 p-5 flex flex-col gap-y-4 border-black md:border-x">
           <p className="text-base">
-            At SHERmed we care about the safety and well being of your 
-            employees. With 12 years of industry experience our
-            dedicated team of Occupational Health & Safety professionals
-            knows how to ensure quick, comprehensive and convenient 
+            At Inventum we care about the safety and well being of your employees.
+            With our dedicated team of Occupational Health & Safety professionals 
+            replete with  knowledge  we ensure quick, comprehensive and convenient
             assessments.
           </p>
 
           <p className="text-base">
-            We specialize in pre-employment, exit and annual medical
-            examinations and provide health and safety solutions for all
-            industry types. No matter how big or small your business is.
-            We will drive operational efficiencies and get better visibility so 
-            you can protect your employees, ensuring your business Health
-            & Safety compliance and reduce risks, maintain medical
-            surveillance programme and adding value to your business.
+            We specialize in pre-employment, exit and periodic medical examinations and provide
+            health and safety solutions for all industry types. No matter how big or small your 
+            business is. We will drive operational efficiencies and get better visibility so you
+            can protect your employees, ensuring your business Health & Safety compliance and 
+            reduce risks, maintain medical exams programme and adding value to your business.
           </p>
 
           <p className="text-base">
-            As part of our commitment, we offer these services no matter 
-            where you company is located. Our highly qualified occupational
-            medical practitioners (OMPs) and occupational health nurse 
-            practitioners (OHNPs), with a world-class mobile unit comes to 
-            your site. This saves you time and provide the desired results by
-            professionally completing the essential Annexure 3 of the 
-            Occupational Health and Safety Act. This essential medical
-            certificate of fitness will include a “fit with conditions” or “fit
-            with restrictions” if relevant.
+            As part of our commitment, we offer these services no matter where your company is
+            located. Our highly qualified occupational medical practitioners, with a world-class
+            mobile unit comes to your site. This saves you time and provide the desired results
+            by professionally completing the essential tests as required by law. 
           </p>
         </div>
-
-        <div className="md:p-10 p-5 flex flex-col gap-y-4">
+        <div className="border-black border-t md:border-none md:p-10 p-5 flex flex-col gap-y-4">
           <p className="text-base">
-            Our focus is providing individualized solutions to ensure that
-            your employee - prospective or current – is mentally, physically
-            and medically fit for their job which reduces costs and downtime,
-            keeps people safe and increases their well-being and productivity.
+            Our focus is providing individualized solutions to ensure that your employee - prospective 
+            or current – is mentally, physically and medically fit for their job which reduces costs and
+            downtime, keeps people safe and increases their well-being and productivity.
           </p>
 
           <p className="text-base">
-            SHERMed provides a whole range of additional Health & Safety
-            services on-site as well. These include drug testing, X -rays, hearing
-            tests, driver assessments, Covid 19 screenings and more.
-          </p>
-
-          <p className="text-base">
-            Our in-depth medicals are tailored to your industry type, in line
-            with applicable legislation consist of:
+            Our in-depth medicals are tailored to your industry type, in line with applicable legislation
+            consist of:
           </p>
 
           <ul className="list-disc mx-7">
             <li>Physical Examination</li>
-            <li>Audio Metric Testing</li>
-            <li>Spirometry Testin</li>
+            <li>Audiometric Testing</li>
+            <li>Spirometry Testing</li>
+            <li>Food handler tests</li>
+            <li>Vision screening</li>
+            <li>Chest X-rays</li>
           </ul>
           <p className="text-base">
-            After the completion of all medicals, each client will receive a medical 
-            report with the certificates of fitness which also contains feedback,
-            recommendations and relevant data to each individual.
+            After the completion of all medicals, each client will receive a medical report with the
+            certificates of fitness "red card" which also contains feedback, recommendations and relevant
+            data to each individual.
           </p>
 
           <p className="text-base">
@@ -93,7 +80,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="our-team" className="text-black bg-gray-200 py-10 text-base">
+      {/* <section id="our-team" className="text-black bg-gray-200 py-10 text-base">
         <div className="grid-cols-1 p-5 md:p-10 grid md:grid-cols-2 gap-2">
           <div className="col-span-1 my-auto h-fit">
             <h1 className="text-3xl font-medium">
@@ -122,7 +109,7 @@ export default function Page() {
             }
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section id="join-us" className="mx-auto pt-[3em] pb-10 gap-y-1 flex flex-col items-center justify-center bg-gray-100">
         <h1 className="text-3xl font-bold text-center mb-4 w-4/5">

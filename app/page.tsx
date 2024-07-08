@@ -1,3 +1,4 @@
+import { QuotationForm } from "./ui/components";
 import Image from "next/image";
 import Link from "next/link";
 import Icon from '@mdi/react';
@@ -6,12 +7,18 @@ import {
   mdiHardHat, mdiHospitalMarker, mdiMapCheckOutline,
   mdiTag, mdiStore24Hour, mdiCreation, mdiVanUtility
 } from '@mdi/js';
-import { QuotationForm } from "./ui/components";
+
+const firstHeroImages = [
+  { src: '/mobile_van.jpg', alt: 'Picture of a mobile health van', title: 'Mobile unit ready to assist you'},
+  { src: '/corporate-healthcare.jpg', alt: 'Image of a man in th suit and a medical logo', title: 'Corporate Wellness Services'},
+  { src: '/physical-examination.jpg', alt: 'Image of physical exam equipment', title: 'Physical examinations'},
+  { src: '/workplace_safety.png', alt: 'Image with safety gear and safety measures', title: 'Workplace Safety'},
+]
 
 export default function Home() {
   return (
     <main className="w-full">
-      <section id="hero" className="grid grid-cols-1 md:grid-cols-3 gap-4 bg-gradient-to-b px-8 py-20 from-blue-800 to-blue-300">
+      <section id="hero" className="grid grid-cols-1 md:grid-cols-3 gap-4 bg-gradient-to-b p-4 md:px-8 py-20 from-blue-800 to-blue-300">
         <div className="md:col-span-2 gap-y-2 h-fit my-auto">
           <span className="px-2 py-1 rounded text-black bg-white font-bold text-base text-blue-600">
             WHO ARE WE
@@ -39,31 +46,18 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="col-span-1 w-full h-fit my-auto grid grid-cols-2 gap-2 rounded">
-          <Image
-            src="/1.jpg" width={1000} height={760}
-            className="rounded duration-300 hover:scale-95"
-            alt="Illustration of our certification process"
-            title="Specialized Medical Certifications"
-          />
-          <Image
-            src="/2.jpg" width={1000} height={760}
-            className="rounded duration-300 hover:scale-95"
-            alt="Illustration of a corporate setup"
-            title="Corporate Wellness Programs"
-          />
-          <Image
-            src="/3.jpg" width={1000} height={760}
-            className="rounded duration-300 hover:scale-95"
-            alt="Illustration of workplace safety measures"
-            title="Workplace Safety Training"
-          />
-          <Image
-            src="/4.jpg" width={1000} height={760}
-            className="rounded duration-300 hover:scale-95"
-            alt="Illustration of workplace health services"
-            title="Workplace Health Services"
-          />
+        <div className="col-span-1 w-full h-fit my-auto grid lg:grid-cols-2 gap-2 rounded">
+          {
+            firstHeroImages.map((info, index) => (
+              <Image
+                key={index}
+                src={info.src} width={1000} height={760}
+                className="rounded duration-300 hover:scale-95"
+                alt={info.alt}
+                title={info.title}
+              />
+            ))
+          }
         </div>
       </section>
 
@@ -135,7 +129,7 @@ export default function Home() {
               our experts conduct your examination with care and professionalism.
             </p>
           </div>
-          
+
           {/* More Services */}
           <div className="h-fit shadow-xl bg-slate-300 duration-300 hover:bg-slate-400 p-4 rounded-lg flex flex-col gap-y-2 ">
             <h2 className="text-2xl font-bold text-blue-800">
@@ -158,7 +152,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="why-us" className="bg-gray-100 grid grid-cols-1 md:grid-cols-2 gap-4 p-7 lg:p-10">
+      <section id="why-us" className="bg-gray-100 grid grid-cols-1 lg:grid-cols-2 gap-4 p-7 lg:p-10">
         <div className="col-span-1 text-black w-4/5 lg:w-full">
           <h2 className="text-3xl font-bold mb-4">Why Choose Inventum Services?</h2>
           <p className="text-base mb-4 md:w-4/5">
@@ -189,7 +183,7 @@ export default function Home() {
         <div className="col-span-1 flex justify-center items-center">
           <Image
             src="/why-us.jpeg" width={1000} height={760}
-            className="rounded-lg duration-300 hover:scale-95 w-4/5"
+            className="rounded-lg duration-300 hover:scale-95 md:w-4/5"
             alt="Inventum Services logo"
           />        
         </div>
@@ -245,7 +239,7 @@ export default function Home() {
             </h2>
           </div>          
         </div>
-        <div className="col-span-1 md:w-4/5 h-fit my-auto text-black">
+        <div className="col-span-1 p-5 md:w-4/5 h-fit my-auto text-black">
           <h1 className="text-4xl mb-2">Are You Legally Compliant?</h1>
 
           <p className="text-base mb-2">

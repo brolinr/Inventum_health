@@ -1,10 +1,12 @@
 'use client'
 import Link from "next/link";
+import Image from "next/image";
 import { useRef, useState } from "react";
 
 export const nav_links = [
-  { title: 'Services', url: '/services' },
+  { title: 'Home', url: '/' },
   { title: 'About', url: '/about' },
+  { title: 'Services', url: '/services' },
   { title: 'Legal', url: '/legal' }
 ];
 
@@ -23,9 +25,18 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div className="p-4 grid bg-blue-950 w-full mx-auto grid-cols-2 gap-x-2 md:grid-cols-7">
-        <div className="col-span-1 bg-white rounded-lg p-3">Logo</div>
-        <div id="large-screen-nav" className="hidden md:col-span-3 pl-20 gap-x-8 md:flex items-center justify-center">
+      <div className="p-4 grid bg-blue-950 w-full mx-auto grid-cols-2 gap-x-2 md:grid-cols-5">
+        <div className="col-span-1 rounded-lg ">
+          <Link className="text-indigo-500" href="/">
+            <Image
+              src='/next.svg' width={150} height={125}
+              className="rounded p-2 bg-white duration-300 hover:scale-95"
+              alt='inventum Logo'
+              title='Logo'
+            />
+          </Link>
+        </div>
+        <div id="large-screen-nav" className="hidden md:col-span-3 gap-x-8 md:flex items-center justify-center">
           {nav_links.map((link) => (
             <Link
               key={link.title}
@@ -36,7 +47,7 @@ export default function Navbar() {
             </Link>
           ))}
         </div>
-        <div className="hidden md:col-span-3 md:flex justify-end gap-2">
+        <div className="hidden md:col-span-1 md:flex justify-end gap-2">
           {nav_buttons.map((button, index) => (
             <Link
               key={button.title}
