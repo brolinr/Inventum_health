@@ -9,7 +9,7 @@ import {
 } from '@mdi/js';
 
 const firstHeroImages = [
-  { src: '/mobile_van.jpg', alt: 'Picture of a mobile health van', title: 'Mobile unit ready to assist you'},
+  { src: '/mobile-unit.webp', alt: 'Picture of a mobile health van', title: 'Mobile unit ready to assist you'},
   { src: '/corporate-healthcare.jpg', alt: 'Image of a man in th suit and a medical logo', title: 'Corporate Wellness Services'},
   { src: '/physical-examination.jpg', alt: 'Image of physical exam equipment', title: 'Physical examinations'},
   { src: '/workplace_safety.png', alt: 'Image with safety gear and safety measures', title: 'Workplace Safety'},
