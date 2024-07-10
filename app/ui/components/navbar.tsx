@@ -24,8 +24,8 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div className="p-4 grid bg-blue-950 w-full mx-auto grid-cols-2 gap-x-2 md:grid-cols-5">
-        <div className="col-span-1 rounded-lg ">
+      <div className="p-4 grid bg-blue-950 w-full mx-auto grid-cols-2 gap-x-2 md:grid-cols-10">
+        <div className="col-span-3 rounded-lg ">
           <Link className="text-indigo-500" href="/">
             <Image
               src='/next.svg' width={150} height={125}
@@ -35,7 +35,7 @@ export default function Navbar() {
             />
           </Link>
         </div>
-        <div id="large-screen-nav" className="hidden md:col-span-3 gap-x-8 md:flex items-center justify-center">
+        <div id="large-screen-nav" className="hidden md:col-span-4 gap-x-8 md:flex items-center justify-center">
           {nav_links.map((link) => (
             <Link
               key={link.title}
@@ -46,7 +46,7 @@ export default function Navbar() {
             </Link>
           ))}
         </div>
-        <div className="hidden md:col-span-1 md:flex justify-end gap-2">
+        <div className="hidden md:col-span-3 md:flex justify-end gap-2">
           {nav_buttons.map((button, index) => (
             <Link
               key={button.title}
