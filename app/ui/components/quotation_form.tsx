@@ -1,5 +1,4 @@
 "use client"
-
 import { useState, ChangeEvent, FormEvent } from 'react';
 
 interface FormData {
@@ -20,7 +19,7 @@ interface FormData {
   additional_message: string;
 }
 
-export default function QuotationForm() {
+const QuotationForm: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -88,8 +87,8 @@ export default function QuotationForm() {
         GET A <span className="font-bold text-blue-700">FREE QUOTE</span>
       </h1>
 
-      <form className="grid md:grid-cols-2 grid-cols-1 gap-4" onSubmit={handleSubmit}>
-        <div className="md:col-span-2 flex-col flex gap-2">
+      <form className="grid grid-cols-1 gap-4" onSubmit={handleSubmit}>
+        <div className="flex-col flex gap-2">
           <label htmlFor="name">Name</label>
           <input
             type="text"
@@ -149,7 +148,7 @@ export default function QuotationForm() {
           />
         </div>
 
-        <div className="flex-row items-center flex gap-2 col-span-1">
+        <div className="flex items-center gap-2">
           <input
             type="checkbox"
             id="vision_screening"
@@ -160,7 +159,7 @@ export default function QuotationForm() {
           <label htmlFor="vision_screening">Vision screening</label>
         </div>
 
-        <div className="flex-row items-center flex gap-2 col-span-1">
+        <div className="flex items-center gap-2">
           <input
             type="checkbox"
             id="audiometry_test"
@@ -171,7 +170,7 @@ export default function QuotationForm() {
           <label htmlFor="audiometry_test">Audiometry test</label>
         </div>
 
-        <div className="flex-row items-center flex gap-2 col-span-1">
+        <div className="flex items-center gap-2">
           <input
             type="checkbox"
             id="xrays"
@@ -182,7 +181,7 @@ export default function QuotationForm() {
           <label htmlFor="xrays">Xrays</label>
         </div>
 
-        <div className="flex-row items-center flex gap-2 col-span-1">
+        <div className="flex items-center gap-2">
           <input
             type="checkbox"
             id="drug_test"
@@ -193,7 +192,7 @@ export default function QuotationForm() {
           <label htmlFor="drug_test">Multi Drug testing</label>
         </div>
 
-        <div className="flex-row items-center flex gap-2 col-span-1">
+        <div className="flex items-center gap-2">
           <input
             type="checkbox"
             id="spirometry"
@@ -204,7 +203,7 @@ export default function QuotationForm() {
           <label htmlFor="spirometry">Spirometry test/Lung function testing</label>
         </div>
 
-        <div className="flex-row items-center flex gap-2 col-span-1">
+        <div className="flex items-center gap-2">
           <input
             type="checkbox"
             id="fitness_certificate"
@@ -215,7 +214,7 @@ export default function QuotationForm() {
           <label htmlFor="fitness_certificate">Employee Medical Certificate of Fitness</label>
         </div>
 
-        <div className="flex-row items-center flex gap-2 col-span-1">
+        <div className="flex items-center gap-2">
           <input
             type="checkbox"
             id="food_handlers"
@@ -226,7 +225,7 @@ export default function QuotationForm() {
           <label htmlFor="food_handlers">Food handler examinations</label>
         </div>
 
-        <div className="flex-row items-center flex gap-2 col-span-1">
+        <div className="flex items-center gap-2">
           <input
             type="checkbox"
             id="equipment_rental"
@@ -237,7 +236,7 @@ export default function QuotationForm() {
           <label htmlFor="equipment_rental">Medical screening equipment rental</label>
         </div>
 
-        <div className="flex-row col-span-2 items-center flex gap-2 col-span-1">
+        <div className="flex items-center gap-2">
           <input
             type="checkbox"
             id="env_training"
@@ -248,7 +247,7 @@ export default function QuotationForm() {
           <label htmlFor="env_training">Occupational Health, Safety & Environmental Training</label>
         </div>
 
-        <div className="md:col-span-2 flex flex-col gap-2">
+        <div className="flex flex-col gap-2">
           <label htmlFor="additional_message">Additional message</label>
           <textarea
             name="additional_message"
@@ -259,12 +258,14 @@ export default function QuotationForm() {
           ></textarea>
         </div>
 
-        <div className="my-2 md:col-span-2 col-span-1 text-white flex justify-center items-center">
-          <button type="submit" className="w-full md:w-2/5 p-2 text-lg bg-blue-700 rounded-full">
+        <div className="my-2 text-white">
+          <button type="submit" className="w-full p-2 text-lg bg-blue-700 rounded-full">
             Send
           </button>
         </div>
       </form>
     </div>
   );
-}
+};
+
+export default QuotationForm;
