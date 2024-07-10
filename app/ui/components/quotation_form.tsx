@@ -40,11 +40,20 @@ export default function QuotationForm() {
   });
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { id, value, type, checked } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [id]: type === 'checkbox' ? checked : value,
-    }));
+    const { id, value, type } = e.target;
+
+    if (type === 'checkbox') {
+      const checked = (e.target as HTMLInputElement).checked;
+      setFormData((prev) => ({
+        ...prev,
+        [id]: checked,
+      }));
+    } else {
+      setFormData((prev) => ({
+        ...prev,
+        [id]: value,
+      }));
+    }
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -69,7 +78,7 @@ export default function QuotationForm() {
       }
     } catch (error) {
       console.error(error);
-      alert(`Error: ${error.message}`);
+      alert(`Something went wrong, our team are working on it.`);
     }
   };
 
