@@ -7,7 +7,7 @@ import { Navbar, Footer } from "./ui/components";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: app_title('Home'),
+  title: app_title(''),
   description: `
     Inventum Health Services offers expert mobile occupational health care,
     corporate wellness services, medical certificates, and workplace safety

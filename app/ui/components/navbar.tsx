@@ -7,11 +7,10 @@ export const nav_links = [
   { title: 'Home', url: '/' },
   { title: 'About', url: '/about' },
   { title: 'Services', url: '/services' },
-  { title: 'Legal', url: '/legal' }
 ];
 
 const nav_buttons = [
-  { title: 'Free quote', url: '/quote' },
+  { title: 'Free quote', url: '/#book-quote' },
   { title: 'Contact us', url: '/contact' },
 ];
 

@@ -2,9 +2,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { mdiPhone } from "@mdi/js"
 import Icon from "@mdi/react"
+import app_title from "../lib/app_title";
 
-export default function Page() {
-  
+export default function Page() {  
   return (
     <main className="text-black bg-white">
       {/* Mobile Health Section */}

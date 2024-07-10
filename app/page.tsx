@@ -112,7 +112,7 @@ export default function Home() {
             </h2>
             <p className="text-base text-center w-[91%]">
               Rent advanced screening equipment for health assessments with flexible 
-              payment options to meet you needs.
+              payment options to meet your needs.
             </p>
           </div>
 
