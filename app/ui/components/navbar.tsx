@@ -24,12 +24,12 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div className="p-4 grid bg-blue-950 w-full mx-auto grid-cols-2 gap-x-2 md:grid-cols-10">
+      <div className="p-4 grid bg-[#3E4095] w-full mx-auto grid-cols-2 gap-x-2 md:grid-cols-10">
         <div className="col-span-1 md:col-span-3 rounded-lg ">
           <Link className="text-indigo-500" href="/">
             <Image
-              src='/next.svg' width={150} height={125}
-              className="rounded p-2 bg-white duration-300 hover:scale-95"
+              src='/inventum.png' width={150} height={125}
+              className="rounded bg-white duration-300 hover:scale-95"
               alt='inventum Logo'
               title='Logo'
             />

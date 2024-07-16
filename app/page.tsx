@@ -18,7 +18,7 @@ const firstHeroImages = [
 export default function Home() {
   return (
     <main className="w-full">
-      <section id="hero" className="grid grid-cols-1 md:grid-cols-3 gap-4 bg-gradient-to-b p-4 md:px-8 py-20 from-blue-800 to-blue-300">
+      <section id="hero" className="grid grid-cols-1 md:grid-cols-3 gap-4 bg-gradient-to-b p-4 md:px-8 py-20 from-[#3E4095] to-blue-300">
         <div className="md:col-span-2 gap-y-2 h-fit my-auto">
           <span className="px-2 py-1 rounded text-black bg-white font-bold text-base text-blue-600">
             WHO ARE WE

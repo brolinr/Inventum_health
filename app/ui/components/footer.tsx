@@ -29,11 +29,10 @@ export default function Footer() {
           </span>
         </div>
 
-        <div className="col-span-1 bg-slate-300 p-5 rounded-lg flex flex-col">
-          <h1 className="text-blue-600 font-black text-center mb-2"> Relevant Links </h1>
-          <span className="text-black text-sm">Our Services</span>
-          <span className="text-black text-sm">Legal Requirements</span>
-          <span className="text-black text-sm">Request a Quotation</span>
+        <div className="col-span-1 bg-slate-300 text-center p-5 rounded-lg flex flex-col">
+          <h1 className="text-blue-600 font-black mb-2"> Address </h1>
+          <span className="text-black text-sm">462 Gaydon Rd Helensvale</span>
+          <span className="text-black text-sm"> Harare, Zimbabwe</span>
         </div>
       </div>
       <div className="lg:w-[90%] my-5 mx-auto md:rounded-full bg-gray-100 grid md:grid-cols-4 grid-cols-1">
