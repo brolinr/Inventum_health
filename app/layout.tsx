@@ -8,9 +8,9 @@ import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: app_title(''),
+  title: 'Inventum health division',
   description: `
-    Inventum Health Services offers expert mobile occupational health care,
+    Inventum Health Division offers expert mobile occupational health care,
     corporate wellness services, medical certificates, and workplace safety
     training. Get your free quotation today.
   `,
@@ -18,7 +18,8 @@ export const metadata: Metadata = {
     mobile occupational health care, corporate wellness,
     medical certificates, workplace safety training,
     Inventum Health Services, Inventum, Radiology,
-    health care, corporate health care
+    health care, corporate health care, inventum, inventum health services,
+    mobile health care, workplace safety
   `
 };
 

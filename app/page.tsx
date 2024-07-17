@@ -145,7 +145,7 @@ export default function Home() {
               hover:bg-blue-700 hover:text-white font-bold text-lg
               flex flex-row justify-center items-center gap-1
             ">
-              Learn more 
+              Discover more 
               <Icon path={mdiArrowTopRight} size={1} color="currentColor" />
             </Link>
           </div>
@@ -174,8 +174,8 @@ export default function Home() {
             </li>
           </ul>
 
-          <Link href='/learn-more' className="font-bold text-lg text-white bg-blue-800 rounded-md p-2 flex items-center w-fit gap-1">
-            Learn more
+          <Link href='/about' className="font-bold text-lg text-white bg-blue-800 rounded-md p-2 flex items-center w-fit gap-1">
+            Discover more
             <Icon path={mdiArrowTopRight} size={1} color="currentColor" />
           </Link>
         </div>
